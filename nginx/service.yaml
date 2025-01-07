@@ -6,8 +6,10 @@ metadata:
   labels:
     app: nginx-app
     name: nginx
+  annotations:
+    "lbipam.cilium.io/ips": "192.168.0.99"
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
   - name: nginx-port
     port: 80
