@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: 192.168.0.53/library/nginx:1.27.3
+        image: ghcr.io/thetaru/gha-image:0.2.0
         ports:
         - containerPort: 80
